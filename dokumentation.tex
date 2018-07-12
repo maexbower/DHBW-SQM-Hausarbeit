@@ -77,6 +77,7 @@
 	\cleardoublepage
 	%\lstlistoflistings
 	\cleardoublepage
+	\setcounter{savepage}{\arabic{page}}
 
 	\pagenumbering{arabic}
 	
@@ -97,6 +98,10 @@
 
 	% Literaturverzeichnis
 	\cleardoublepage
+	\pagenumbering{Roman}
+	%restore Page Numbering
+	\setcounter{page}{\thesavepage}
+
 	\printbibliography
 
 	% Glossar
